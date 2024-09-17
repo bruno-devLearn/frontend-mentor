@@ -48,6 +48,7 @@ main {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.068);
     font-family: 'Outfit';
     font-size: var(--Font-paragraph);
+    margin-bottom: 30px;
 }
 
 section {
@@ -73,6 +74,7 @@ section p, li {
 
 section span {
     color: var(--Stone600);
+    font-weight: 700;
 }
 
 section ul, ol {
@@ -119,4 +121,31 @@ section.instructions {
     border-top: 1px solid var(--Stone100);
     border-bottom: 1px solid var(--Stone100);
     padding: 30px 0;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flex .flex-contem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+div.flex .flex-contem .red {
+    margin: auto;
+    color: var(--Rose800);
+    font-weight: 700;
+}
+
+div.flex .bottom {
+    border-bottom: 1px solid var(--Stone100);
+}
+
+#no-bottom, .no-bottom {
+    padding-bottom: 0px;
+    margin-bottom: 0;
 }

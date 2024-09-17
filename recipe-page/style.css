@@ -41,14 +41,13 @@ body {
 }
 
 main {
-    width: 700px;
+    max-width: 650px;
     padding: 50px;
     border-radius: 30px;
     background-color: var(--White);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.068);
     font-family: 'Outfit';
     font-size: var(--Font-paragraph);
-    margin-bottom: 30px;
 }
 
 section {
@@ -83,21 +82,21 @@ section ul, ol {
 
 section li {
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 section li::marker {
     color: var(--Rose800);
 }
 
-section.main img {
-    width: 700px;
+    img {
+    max-width: 650px;
     border-radius: 15px;
     margin-bottom: 30px;
 }
 
 section.main h1 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: var(--Stone900);
     font-size: 37px;
     font-weight: 400;
@@ -148,4 +147,29 @@ div.flex .bottom {
 #no-bottom, .no-bottom {
     padding-bottom: 0px;
     margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        display: block;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 100vw;
+        padding: 0;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .container {
+        padding: 25px;
+    }
 }

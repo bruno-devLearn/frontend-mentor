@@ -89,3 +89,10 @@ main {
     background-color: var(--Green);
     color: var(--Grey800);
 }
+
+@media (max-width: 400px) {
+    main {
+        width: 250px;
+        padding: 25px;
+    }
+}

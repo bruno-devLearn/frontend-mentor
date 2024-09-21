@@ -37,12 +37,16 @@ main {
     background-color: var(--White);
     border-radius: 20px;
     box-shadow: 8px 8px #000000;
+    line-height: 150%;
 }
 
-div.img img {
+div.img {
     height: 200px;
     width: 336;
     margin-bottom: 24px;
+}
+
+div.img img {
     border-radius: 10px;
 }
 
@@ -64,9 +68,13 @@ div.content span {
 }
 
 
-div.content h1{
+div.content h1 {
     font-size: 24px;
     font-weight: 800;
+}
+
+div.content h1:hover {
+    color: var(--Yellow);
 }
 
 div.content #text {
@@ -74,3 +82,17 @@ div.content #text {
     font-size: 16px;
 }
 
+div.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 32px;
+    width: 129px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+div.author img {
+    width: 32px;
+}

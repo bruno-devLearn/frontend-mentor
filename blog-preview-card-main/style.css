@@ -39,12 +39,6 @@ main {
     box-shadow: 8px 8px #000000;
 }
 
-div.img {
-    color: var(--Gray950);
-    margin-bottom: 12px;
-    font-size: 14px;
-}
-
 div.img img {
     height: 200px;
     width: 336;
@@ -52,15 +46,31 @@ div.img img {
     border-radius: 10px;
 }
 
-div.img span {
+div.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: var(--Gray950);
+}
+
+div.content span {
     display: inline-block;
-    margin-bottom: 12px;
     font-weight: 800;
     background-color: var(--Yellow);
     padding: 4px 12px;
     border-radius: 4px;
+    width: 70px;
 }
 
-div.main {
-    
+
+div.content h1{
+    font-size: 24px;
+    font-weight: 800;
 }
+
+div.content #text {
+    color: var(--Gray500);
+    font-size: 16px;
+}
+

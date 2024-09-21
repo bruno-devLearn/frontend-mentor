@@ -39,4 +39,28 @@ main {
     box-shadow: 8px 8px #000000;
 }
 
-.c
+div.img {
+    color: var(--Gray950);
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+div.img img {
+    height: 200px;
+    width: 336;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+div.img span {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 800;
+    background-color: var(--Yellow);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+div.main {
+    
+}

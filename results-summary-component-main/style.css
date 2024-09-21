@@ -40,6 +40,8 @@ body {
 
 main {
     display: flex;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px rgb(150, 150, 150);
 }
 
 section h2 {
@@ -87,7 +89,6 @@ section.left .circle #big {
 
 section.left .circle #small {
     color: var(--Lightlavender);
-    font-size: 18px;
 }
 
 section.left h3 {
@@ -98,6 +99,61 @@ section.left h3 {
 
 section.left p {
     color: var(--Paleblue);
-    font-size: 18px;
     width: 260px;
+}
+
+section.right {
+    padding: 30px;
+    width: 300px;
+}
+
+section.right h2 {
+    margin-bottom: 30px;
+}
+
+section.right .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section.right .icons .icon {
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+section.right .icons #red {
+    color: var(--Lightred);
+    background-color: hsla(0, 100%, 67%, 0.219);
+}
+
+section.right .icons #yellow {
+    color: var(--Orangeyyellow);
+    background-color: hsla(39, 100%, 56%, 0.205);
+}
+
+section.right .icons #green {
+    color: var(--Greenteal);
+    background-color: hsla(166, 100%, 37%, 0.205);
+}
+
+section.right .icons #blue {
+    color: var(--Cobaltblue);
+    background-color: hsla(234, 85%, 45%, 0.219);
+}
+
+section.right .icons span{
+    display: inline-block;
+    font-weight: 800;
+}
+
+section.right .icons .text {
+    color: hsl(0, 0%, 51%);
+}
+
+section.right .icons .text > span {
+    color: var(--Darkgrayblue);
 }

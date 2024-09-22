@@ -17,3 +17,126 @@
     padding: 0;
     font-family: 'Montserrat';
 }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    min-height: 667px;
+    min-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Cream);
+}
+
+main {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    background-color: var(--White);
+    color: var(--Darkgrayishblue);
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+#two {
+    display: none;
+}
+
+div.left img {
+    height: 450px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div.right {
+    padding: 32px;
+}
+
+div.right h1 {
+    margin-top: 14px;
+    margin-bottom: 20px;
+    font-family: 'Fraunces';
+    font-size: 28px;
+    color: var(--Verydarkblue);
+    line-height: 35px;
+}
+
+div.right p {
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+
+div.right .price {
+    margin-bottom: 24px;
+}
+
+div.right .price #big {
+    font-size: 28px;
+    font-family: 'Fraunces';
+    color: var(--Darkcyan);
+    margin-right: 16px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    padding: 15px;
+    height: 48px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #00311f;
+}
+
+@media (max-width: 610px) {
+    main {
+        width: 343px;
+        height: 606px;
+        flex-direction: column;
+    }
+
+    #one {
+        display: none;
+    }
+
+    #two {
+        display: block;
+    }
+
+    div.left img {
+        height: 240px;
+        width: 343px;
+        object-fit: cover;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    div.right {
+        padding: 28px;
+    }
+
+    div.right h1 {
+        margin-top: 11px;
+        margin-bottom: 10px;
+    }
+
+    div.right p {
+        margin-bottom: 10px;
+    }
+
+    div.right .price {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}

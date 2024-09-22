@@ -45,8 +45,12 @@ main {
     margin-bottom: 24px;
 }
 
+.text {
+    padding: 0px 16px;
+}
+
 .text h1 {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 700;
     color: var(--Slate900);
     margin-bottom: 16px;

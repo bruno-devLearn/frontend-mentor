@@ -15,3 +15,120 @@
     padding: 0;
     font-family: 'Red Hat Display';
 }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Paleblue);
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+main {
+    width: 450px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.image img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+}
+
+.content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: var(--Darkblue);
+    font-weight: 900;
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Desaturatedblue);
+    width: 365px;
+    margin: auto;
+}
+
+.plan {
+    display: flex;
+    background-color: var(--Verypaleblue);
+    padding: 15px;
+    border-radius: 7px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.plan img {
+    margin-right: 19px;
+}
+
+.plan .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan .text span#top {
+    color: var(--Darkblue);
+    font-weight: 900;
+}
+
+.plan .text span#bottom {
+    color: var(--Desaturatedblue);
+    font-weight: 700;
+}
+
+.plan span#left {
+    position: relative;
+    left: 104px;
+    color: var(--Brightblue);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.plan span#left:hover {
+    color: hsla(245, 75%, 52%, 0.459);
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue);
+    font-weight: 900;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsla(245, 75%, 52%, 0.459);
+}
+
+p#text {
+    color: var(--Desaturatedblue);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+p#text:hover {
+    color: hsla(224, 23%, 55%, 0.753);
+}

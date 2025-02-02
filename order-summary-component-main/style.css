@@ -47,7 +47,7 @@ main {
 }
 
 .main {
-    padding: 45px 45px;
+    padding: 45px;
 }
 
 .main .main-text h1 {
@@ -120,6 +120,8 @@ main {
     box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.281);
     border: none;
     cursor: pointer;
+    justify-content: center;
+    display: flex;
 }
 
 .main .pay:hover {
@@ -134,4 +136,27 @@ main {
 
 .main #cancel:hover {
     color: var(--Dark-blue);
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+
+    main {
+        width: 330px;
+        height: 574px;
+    }
+
+    .img img {
+        width: 330px;
+    }
+
+    .main {
+        padding: 30px;
+    }
+
+    .main .plan .text .vertical {
+        margin-right: 28px;
+    }
 }

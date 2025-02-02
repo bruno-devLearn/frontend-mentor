@@ -9,3 +9,129 @@
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--Pale-blue);
+}
+
+main {
+    box-sizing: border-box;
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.281);
+    width: 450px;
+    height: 698px;
+    text-align: center;
+    background-color: var(--Verypale-blue);
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.img img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main {
+    padding: 45px 45px;
+}
+
+.main .main-text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--Dark-blue);
+    margin-bottom: 15px;
+    
+}
+
+.main .main-text p {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main .plan {
+    display: flex;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.main .plan img {
+    position: relative;
+    margin-right: 20px;
+    height: 48px;
+}
+
+.main .plan .text {
+    display: flex;
+}
+
+.main .plan .text .vertical {
+    margin-right: 92px;
+}
+
+.main .plan .text .vertical h2 {
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.main  .plan .text .vertical #bottom {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.main .plan .text #right {
+    position: relative;
+    top: 25%;
+    color: var(--Bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main .plan .text #right:hover {
+    color: hsla(245, 75%, 52%, 0.603);
+    text-decoration: none;
+}
+
+.main .pay {
+    width: 100%;
+    padding: 15px 100px;
+    margin-bottom: 30px;
+    background-color: var(--Bright-blue);
+    color: var(--Verypale-blue);
+    font-weight: 900;
+    white-space: nowrap;
+    border-radius: 10px;
+    box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.281);
+    border: none;
+    cursor: pointer;
+}
+
+.main .pay:hover {
+    background-color: hsla(245, 75%, 52%, 0.603);
+}
+
+.main #cancel {
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.main #cancel:hover {
+    color: var(--Dark-blue);
+}

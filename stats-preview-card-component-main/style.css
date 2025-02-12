@@ -8,6 +8,102 @@
     --Dark-desaturated-blue: hsl(244, 38%, 16%);            /* card background     */
     --Soft-violet: hsl(277, 64%, 61%);                      /* accent              */
     --White : hsl(0, 0%, 100%);                             /* main heading, stats */
-    --Slightly-transparent-white : hsla(0, 0%, 100%, 0.75); /* main paragraph      */
-    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);   /* stat headings       */
+    --Slightly-transparent-white1: hsla(0, 0%, 100%, 0.75); /* main paragraph      */
+    --Slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);   /* stat headings       */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Dark-desaturated-blue);
+    box-sizing: border-box;
+    width: 1109px;
+    height: 446px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.right {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.right .color {
+    height: 446px;
+    width: 540px;
+    top: -451px;
+    opacity: 67%;
+    position: relative;
+    z-index: 2;
+    background-color: var(--Soft-violet);
+}
+
+.right img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.left {
+    padding: 70px 72px;
+}
+
+.left h1 {
+    font-family: 'Inter';
+    font-size: 36px;
+    color: var(--White);
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.left h1 .purple {
+    color: var(--Soft-violet);
+}
+
+.left p {
+    color: var(--Slightly-transparent-white1);
+    width: 349px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Inter';
+    font-weight: 400;
+    margin-bottom: 76px;
+}
+
+.left .statics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left .statics .stats {
+    font-family: 'Inter';
+    font-weight: 700;
+    color: var(--Slightly-transparent-white2);
+    font-size: 25px;
+}
+
+.left .statics .stats .new-font {
+    display: block;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--White);
+    word-spacing: 3%;
 }

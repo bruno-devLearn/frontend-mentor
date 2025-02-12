@@ -29,7 +29,7 @@ body {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: var(--Dark-desaturated-blue);
     box-sizing: border-box;
     width: 1109px;
@@ -106,4 +106,61 @@ main {
     font-size: 13px;
     color: var(--White);
     word-spacing: 3%;
+}
+
+@media (max-width: 1139px) {
+    body {
+        min-width: 375px;
+    }
+
+    main {
+        width: 326px;
+        height: 779px;
+        flex-direction: column;
+    }
+
+    .right {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+        width: 327px;
+        height: 239px;
+    }
+
+    .right img {
+        width: 327px;
+        height: 239px;
+    }
+
+    .right .color {
+        width: 327px;
+        height: 239px;
+        top: -243px;
+    }
+
+    .left {
+        padding: 40px 23px;
+    }
+
+    .left h1 {
+        font-size: 28px;
+        text-align: center;
+        width: 279px;
+        margin-bottom: 22px;
+    }
+
+    .left p {
+        text-align: center;
+        width: 268px;
+        margin-bottom: 49px;
+    }
+
+    .left .statics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left .statics .stats {
+        margin-bottom: 31px;
+    }
 }
